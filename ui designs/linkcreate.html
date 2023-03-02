@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+      <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+    <script>$(document).ready(function() {
+        $('#multiple-checkboxes').multiselect({
+          includeSelectAllOption: true,
+        });
+    });</script>
+</head>
+<body>
+    <div class="container1" style="width: auto;">
+        <div class="tlogo">
+            <img class="logo" src="logo.png"  alt="">
+        </div>
+        <h1 class="titles"> Create a new appointment link</h1>
+        <form action="" method="post">
+        
+            <input  type="text" name="title" id="title" placeholder="Title" required>
+            <br><br>
+
+            <textarea id="description" name="description" rows="4" cols="38" placeholder="Description.."></textarea>
+            <br>
+                <strong>Select Language:</strong>
+              <select id="multiple-checkboxes" name="selected_slots_list" multiple="multiple" required>
+                  <option value="php">PHP</option>
+                  <option value="javascript">JavaScript</option>
+                  <option value="java">Java</option>
+                  <option value="sql">SQL</option>
+                  <option value="jquery">Jquery</option>
+                  <option value=".net">.Net</option>
+              </select>
+        <br> <br>
+          
+            <input type="submit" value="Create" >
+        </form>
+    </div>
+</body>
+</html>

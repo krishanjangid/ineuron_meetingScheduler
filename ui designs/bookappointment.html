@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+      <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container1" style="width:auto;">
+        <div class="tlogo">
+            <img class="logo" src="logo.png"  alt="">
+        </div>
+        <h1 class="titles">Book Appointment</h1>
+        <form action="" method="post">
+        
+            <input  type="text" name="name" id="name" placeholder="Enter name. [leave blank to use your name]" >
+            <br><br>
+            <input  type="email" name="email" id="email" placeholder="Enter Email" >
+            <br><br>
+            <input  type="text" name="title" id="title" placeholder="Title" >
+            <br><br>
+            <textarea id="description" name="description" rows="4" cols="38" placeholder="Description.."></textarea>
+            <br>
+            <div>
+                <strong>Select Language:</strong>
+              <select id="multiple-checkboxes" name="selected_slots_list" required>
+                  <option value="php">PHP</option>
+                  <option value="javascript">JavaScript</option>
+              </select>
+            </div>
+        <br> <br>
+          
+            <input type="submit" value="Book Now" >
+        </form>
+    </div>
+</body>
+</html>
